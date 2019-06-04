@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>System Load Prediction</title>
+</head>
+<body>
+<h2>Please enter features for the prediction:</h2>
+	
+	<form method= "POST" action="/results">
+
+
+			<ul >
+
+					<li id="li_1" >
+		<label class="description" for="element_1">Date (format dd/mm/yyyy)</label>
+		<div>
+			<input id="element_1" name="Date" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Hr_End </label>
+		<div>
+			<input id="element_2" name="Hr_End" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Dry_Bulb </label>
+		<div>
+			<input id="element_3" name="Dry_Bulb" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		
+			</ul>
+
+		
+		<div>
+			<input type=submit value='Predict' name='submit_btn'>
+		</div>
+	</form>
+
+
+</body>
+</html>
